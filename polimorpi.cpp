@@ -21,6 +21,7 @@ public:
     void pesan(){
         cout << "Pesan dari lia" << endl;
     }
+    
 };
 
 int main() {
@@ -28,5 +29,11 @@ int main() {
     joko a;
     lia b;
 
-    
+    obyek = &a;
+    obyek->pesan();
+    obyek = &b;
+    obyek->pesan();
+    //a.seseorang::pesan();
+    //b.seseorang::pesan();
+    return 0;
 }
